@@ -37,7 +37,16 @@ const Navbar = () => {
                 info@sanmiguelcontadores.com.ar
               </div>
             </div>
-            <Button variant="cta" size="sm">
+            <Button
+              variant="cta"
+              size="sm"
+              onClick={() => {
+                const section = document.getElementById("contacto");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               Consulta Gratuita
             </Button>
           </div>

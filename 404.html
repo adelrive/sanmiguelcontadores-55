@@ -2,9 +2,19 @@
 <html>
 
 <head>
-    <meta http-equiv="refresh" content="0; url=/" />
+    <meta charset="utf-8">
+    <title>Redirigiendo...</title>
+    <script>
+        // Redirecciona a la ruta original pero forzando el uso de index.html
+        var path = window.location.pathname;
+        var query = window.location.search || '';
+        var hash = window.location.hash || '';
+        window.location.replace('/sanmiguelcontadores-55/' + '?' + 'redirect=' + encodeURIComponent(path + query + hash));
+    </script>
 </head>
 
-<body></body>
+<body>
+    Redirigiendo...
+</body>
 
 </html>

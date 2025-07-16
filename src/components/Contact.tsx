@@ -66,7 +66,11 @@ const Contact = () => {
               Solicita tu Consulta Gratuita
             </h3>
 
-            <form className="space-y-6">
+            <form
+              action="https://formspree.io/f/mgvzeqnj"
+              method="POST"
+              className="space-y-6"
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
@@ -74,6 +78,8 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    name="nombre"
+                    required
                     className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                     placeholder="Tu nombre completo"
                   />
@@ -84,6 +90,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    name="empresa"
                     className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                     placeholder="Nombre de tu empresa"
                   />
@@ -97,6 +104,8 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    required
                     className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                     placeholder="tu@email.com"
                   />
@@ -107,6 +116,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="tel"
+                    name="telefono"
                     className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                     placeholder="+54 9 11 0000 0000"
                   />
@@ -117,8 +127,12 @@ const Contact = () => {
                 <label className="block text-sm font-medium text-foreground mb-2">
                   Servicio de Interés
                 </label>
-                <select className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent">
-                  <option>Selecciona un servicio</option>
+                <select
+                  name="servicio"
+                  required
+                  className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                >
+                  <option value="">Selecciona un servicio</option>
                   <option>Contabilidad Integral</option>
                   <option>Auditoría Profesional</option>
                   <option>Asesoría Fiscal</option>
@@ -133,13 +147,15 @@ const Contact = () => {
                   Mensaje
                 </label>
                 <textarea
+                  name="mensaje"
+                  required
                   rows={4}
                   className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                   placeholder="Cuéntanos más sobre tus necesidades..."
                 />
               </div>
 
-              <Button variant="professional" size="lg" className="w-full">
+              <Button type="submit" variant="professional" size="lg" className="w-full">
                 Solicitar Consulta Gratuita
               </Button>
 
@@ -147,65 +163,7 @@ const Contact = () => {
                 Al enviar este formulario, aceptas que nos pongamos en contacto contigo
                 para programar tu consulta gratuita.
               </p>
-              <form
-                action="https://formspree.io/f/mgvzeqnj"
-                method="POST"
-                className="space-y-4"
-              >
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    name="nombre"
-                    placeholder="Tu nombre completo"
-                    required
-                    className="w-full px-4 py-2 border rounded"
-                  />
-                  <input
-                    type="text"
-                    name="empresa"
-                    placeholder="Nombre de tu empresa"
-                    className="w-full px-4 py-2 border rounded"
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="tu@email.com"
-                    required
-                    className="w-full px-4 py-2 border rounded"
-                  />
-                  <input
-                    type="tel"
-                    name="telefono"
-                    placeholder="+54 9 11 0000 0000"
-                    className="w-full px-4 py-2 border rounded"
-                  />
-                </div>
-
-                <select
-                  name="servicio"
-                  required
-                  className="w-full px-4 py-2 border rounded mt-4"
-                >
-                  <option value="">Selecciona un servicio</option>
-                  <option value="Contabilidad mensual">Contabilidad mensual</option>
-                  <option value="Impuestos">Impuestos</option>
-                  <option value="Auditoría">Auditoría</option>
-                  <option value="BPO / Administración">BPO / Administración</option>
-                  <option value="Otros">Otros</option>
-                </select>
-
-                <textarea
-                  name="mensaje"
-                  placeholder="Cuéntanos más sobre tus necesidades..."
-                  required
-                  className="w-full px-4 py-2 border rounded"
-                  rows={4}
-                />
-
-                <Button type="submit" variant="cta" size="lg">
-                  Solicitar Consulta Gratuita
-                </Button>
-              </form>
+            </form>
           </div>
         </div>
       </div>

@@ -147,7 +147,65 @@ const Contact = () => {
                 Al enviar este formulario, aceptas que nos pongamos en contacto contigo
                 para programar tu consulta gratuita.
               </p>
-            </form>
+              <form
+                action="https://formspree.io/f/mgvzeqnj"
+                method="POST"
+                className="space-y-4"
+              >
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Tu nombre completo"
+                    required
+                    className="w-full px-4 py-2 border rounded"
+                  />
+                  <input
+                    type="text"
+                    name="empresa"
+                    placeholder="Nombre de tu empresa"
+                    className="w-full px-4 py-2 border rounded"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    required
+                    className="w-full px-4 py-2 border rounded"
+                  />
+                  <input
+                    type="tel"
+                    name="telefono"
+                    placeholder="+54 9 11 0000 0000"
+                    className="w-full px-4 py-2 border rounded"
+                  />
+                </div>
+
+                <select
+                  name="servicio"
+                  required
+                  className="w-full px-4 py-2 border rounded mt-4"
+                >
+                  <option value="">Selecciona un servicio</option>
+                  <option value="Contabilidad mensual">Contabilidad mensual</option>
+                  <option value="Impuestos">Impuestos</option>
+                  <option value="Auditoría">Auditoría</option>
+                  <option value="BPO / Administración">BPO / Administración</option>
+                  <option value="Otros">Otros</option>
+                </select>
+
+                <textarea
+                  name="mensaje"
+                  placeholder="Cuéntanos más sobre tus necesidades..."
+                  required
+                  className="w-full px-4 py-2 border rounded"
+                  rows={4}
+                />
+
+                <Button type="submit" variant="cta" size="lg">
+                  Solicitar Consulta Gratuita
+                </Button>
+              </form>
           </div>
         </div>
       </div>

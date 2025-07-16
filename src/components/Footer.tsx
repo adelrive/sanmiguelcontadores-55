@@ -8,8 +8,8 @@ const Footer = () => {
           <div>
             <div className="text-2xl font-bold mb-4">San Miguel Contadores</div>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              Tu socio estratégico en servicios contables, de auditoría y fiscales. 
-              Comprometidos con tu éxito empresarial desde hace más de 15 años.
+              Tu socio estratégico en servicios contables, de auditoría y fiscales.
+              Comprometidos con tu éxito empresarial.
             </p>
             <div className="flex space-x-4">
               <Linkedin className="w-5 h-5 text-primary-foreground/60 hover:text-accent cursor-pointer transition-colors" />

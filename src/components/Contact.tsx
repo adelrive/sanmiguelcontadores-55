@@ -11,7 +11,7 @@ const Contact = () => {
             Contacta con Nuestros Expertos
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Estamos aquí para ayudarte. Programa una consulta gratuita y 
+            Estamos aquí para ayudarte. Programa una consulta gratuita y
             descubre cómo podemos optimizar la gestión financiera de tu empresa.
           </p>
         </div>
@@ -65,15 +65,15 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-foreground mb-6">
               Solicita tu Consulta Gratuita
             </h3>
-            
+
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Nombre
                   </label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                     placeholder="Tu nombre completo"
                   />
@@ -82,21 +82,21 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Empresa
                   </label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                     placeholder="Nombre de tu empresa"
                   />
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Email
                   </label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                     placeholder="tu@email.com"
                   />
@@ -105,10 +105,10 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Teléfono
                   </label>
-                  <input 
-                    type="tel" 
+                  <input
+                    type="tel"
                     className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
-                    placeholder="+34 600 000 000"
+                    placeholder="+54 9 11 0000 0000"
                   />
                 </div>
               </div>
@@ -132,7 +132,7 @@ const Contact = () => {
                 <label className="block text-sm font-medium text-foreground mb-2">
                   Mensaje
                 </label>
-                <textarea 
+                <textarea
                   rows={4}
                   className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                   placeholder="Cuéntanos más sobre tus necesidades..."
@@ -144,7 +144,7 @@ const Contact = () => {
               </Button>
 
               <p className="text-sm text-muted-foreground text-center">
-                Al enviar este formulario, aceptas que nos pongamos en contacto contigo 
+                Al enviar este formulario, aceptas que nos pongamos en contacto contigo
                 para programar tu consulta gratuita.
               </p>
             </form>

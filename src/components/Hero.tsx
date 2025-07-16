@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-accounting.jpg";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center">
-      <div 
+      <div
         className="absolute inset-0 bg-gradient-hero"
         style={{
           backgroundImage: `url(${heroImage})`,
@@ -14,19 +14,19 @@ const Hero = () => {
           backgroundBlendMode: 'overlay'
         }}
       />
-      
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Servicios Contables
+              Servicios
               <span className="text-accent block">Profesionales</span>
               que Impulsan tu Éxito
             </h1>
-            
+
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Más de 15 años de experiencia ofreciendo servicios especializados en 
-              contabilidad, auditoría e impuestos para empresas que buscan 
+              Más de 25 años de experiencia ofreciendo servicios especializados en
+              contabilidad, auditoría e impuestos para empresas que buscan
               excelencia y crecimiento sostenible.
             </p>
 
@@ -64,7 +64,7 @@ const Hero = () => {
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                    <span className="text-2xl font-bold text-accent-foreground">15+</span>
+                    <span className="text-2xl font-bold text-accent-foreground">25+</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-white">Años de Experiencia</h4>

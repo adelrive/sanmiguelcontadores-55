@@ -26,12 +26,12 @@ const services = [
   },
   {
     icon: TrendingUp,
-    title: "Asesoría Fiscal",
+    title: "Asesoría Fiscal y de Nómina",
     description: "Optimización fiscal estratégica para maximizar tus beneficios y cumplir con la normativa.",
     features: [
       "Planificación fiscal",
       "Declaraciones de impuestos",
-      "Asesoría en IVA",
+      "Liquidación de sueldos y cargas sociales",
       "Optimización tributaria"
     ]
   },
@@ -79,15 +79,15 @@ const Services = () => {
             Nuestros Servicios Profesionales
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ofrecemos una gama completa de servicios contables, de auditoría y fiscales 
+            Ofrecemos una gama completa de servicios contables, de auditoría y fiscales
             diseñados para satisfacer las necesidades específicas de tu empresa.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="bg-gradient-card shadow-card hover:shadow-hover transition-all duration-300 hover:transform hover:scale-105 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >

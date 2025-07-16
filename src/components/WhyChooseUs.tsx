@@ -4,7 +4,7 @@ const benefits = [
   {
     icon: Award,
     title: "Experiencia Comprobada",
-    description: "Más de 15 años en el sector con certificaciones profesionales reconocidas internacionalmente."
+    description: "Más de 25 años en el sector con certificaciones profesionales reconocidas internacionalmente."
   },
   {
     icon: Target,
@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
             ¿Por Qué Elegir San Miguel Contadores?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Nos diferenciamos por nuestro compromiso con la excelencia, 
+            Nos diferenciamos por nuestro compromiso con la excelencia,
             la innovación y el servicio personalizado que cada cliente merece.
           </p>
         </div>
@@ -60,10 +60,10 @@ const WhyChooseUs = () => {
             <h3 className="text-2xl font-bold text-foreground mb-6">
               Nuestros Números Hablan
             </h3>
-            
+
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">15+</div>
+                <div className="text-4xl font-bold text-primary mb-2">25+</div>
                 <div className="text-sm text-muted-foreground">Años de Experiencia</div>
               </div>
               <div className="text-center">
@@ -82,8 +82,8 @@ const WhyChooseUs = () => {
 
             <div className="mt-8 p-6 bg-primary/5 rounded-lg">
               <blockquote className="text-muted-foreground italic">
-                "San Miguel Contadores ha sido fundamental en el crecimiento de nuestra empresa. 
-                Su profesionalismo y dedicación nos han permitido centrarnos en 
+                "San Miguel Contadores ha sido fundamental en el crecimiento de nuestra empresa.
+                Su profesionalismo y dedicación nos han permitido centrarnos en
                 nuestro core business con total tranquilidad."
               </blockquote>
               <div className="mt-4 font-semibold text-foreground">

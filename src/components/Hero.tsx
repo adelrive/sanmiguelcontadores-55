@@ -46,7 +46,17 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="cta" size="lg" className="text-lg">
+              <Button
+                variant="cta"
+                size="lg"
+                className="text-lg"
+                onClick={() => {
+                  const section = document.getElementById("contacto");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 Consulta Gratuita
                 <ArrowRight className="w-5 h-5" />
               </Button>

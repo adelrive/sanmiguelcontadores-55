@@ -55,7 +55,7 @@ const Contact = () => {
                 <p className="text-lg font-semibold text-primary mb-2">
                   Av. Belgrano 1217 piso 10, of. 106
                 </p>
-                <p className="text-muted-foreground">() CABA, Argentina</p>
+                <p className="text-muted-foreground">CABA, Argentina</p>
               </CardContent>
             </Card>
 

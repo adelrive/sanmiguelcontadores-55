@@ -26,7 +26,7 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-semibold text-primary mb-2">+54 9 11 5309 2157</p>
+                <p className="text-2xl font-semibold text-primary mb-2">+54 11 5309 2157</p>
                 <p className="text-muted-foreground">Línea directa para consultas urgentes</p>
               </CardContent>
             </Card>

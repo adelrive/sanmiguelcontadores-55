@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="hidden lg:flex items-center space-x-4 text-sm">
               <div className="flex items-center text-muted-foreground">
                 <Phone className="w-4 h-4 mr-1" />
-                +54 9 11 5309 2157
+                +54 11 5309 2157
               </div>
               <div className="flex items-center text-muted-foreground">
                 <Mail className="w-4 h-4 mr-1" />
